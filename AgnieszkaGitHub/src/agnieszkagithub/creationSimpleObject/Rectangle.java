@@ -8,6 +8,15 @@ package agnieszkagithub.creationSimpleObject;
 public class Rectangle {
     double heigh;
     double width;
+
+    public Rectangle(double heigh, double width) {
+        this.heigh = heigh;
+        this.width = width;
+    }
+    
+    public Rectangle() {};
+    
+    
     
      double getArea() {
         return heigh * width;
