@@ -3,18 +3,19 @@ package agnieszkagithub.creationSimpleObject;
 
 public class House {
     public String address;
-    public Room[] roomList = new Room[5];
+    public Room[] roomList;
     
     public House() {};
     
-    public House(String address, String roomList[]) {
+    public House(String address) {
         this.address = address;
-        this.roomList = roomList;
     }
     
     public double getArea() {
-        return for (String room : ) {
-            return getarea =+ g
+        double area = 0;
+        for (Room room : roomList) {
+            area += room.getArea();
         }
+        return area;
     }
 }
