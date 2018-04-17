@@ -28,7 +28,7 @@ public class BattleShip2 extends Application {
     public void start(Stage primaryStage) throws Exception {
         Text text = new Text("Battle Ship");
         text.setFill(Color.WHITE);
-        text.setFont();
+        //text.setFont(A);
         
         GridPane gridPane = new GridPane();     // crée le :GridPane
         gridPane.setAlignment(Pos.CENTER);      // centre les objets dans les cellules
