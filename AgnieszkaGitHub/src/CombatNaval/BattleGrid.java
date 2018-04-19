@@ -3,21 +3,30 @@ package CombatNaval;
 
 import java.util.ArrayList;
 
-public class BattleGrid {
+public abstract class BattleGrid {
     
-    private int size;
-    ArrayList<Ship> ships = new ArrayList<>();
+    protected int size;
+    protected ArrayList<Ship> ships = new ArrayList<>();
     // remplace avantageusement : Ship[] shipList = new Ship[100];
-    ArrayList<Bomb> bombs = new ArrayList<>();
+    protected ArrayList<Bomb> bombs = new ArrayList<>();
 
     public BattleGrid(int size) {
         this.size = size;
     }
-
-    public CellState[][] getCellState(){
+    
+    
+    public CellState[][] getCellsState() {
+        CellState[][] cells = new CellState[size][size];
+        for(int l=0; l<size; l++) {
+            for(int c=0; c<size; c++) {
+                cells[l][c] = CellState.WATER;
+            }
+        }
+        return cells;
     }
     
-    public FireResult fire(int x, int y){
+    FireResult fire(int x, int y) {
+        return FireResult.WATER;
     }
 
     public int getSize() {

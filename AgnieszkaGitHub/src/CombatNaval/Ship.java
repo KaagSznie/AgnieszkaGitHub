@@ -20,10 +20,10 @@ public class Ship {
     
     public enum Orientation { HORIZONTAL, VERTICAL };
     
-    ShipType type;
-    int x;
-    int y;
-    Orientation orientation;
+    private ShipType type;
+    private int x;
+    private int y;
+    private Orientation orientation;
     
     public Ship(ShipType type,  Orientation orientation, int x, int y) {
         this.type = type;

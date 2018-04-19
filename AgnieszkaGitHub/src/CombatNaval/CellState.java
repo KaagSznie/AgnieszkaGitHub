@@ -1,7 +1,7 @@
 package CombatNaval;
 
 public enum CellState {
-    BOMB,
+    BOMB_WATER,
     WATER,
     SHIP,
     TOUCH,
