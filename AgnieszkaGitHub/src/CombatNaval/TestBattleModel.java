@@ -10,8 +10,8 @@ package CombatNaval;
  * @author Admin
  */
 public class TestBattleModel {
-    public static void main(String[] args) {
-        BattleModel battleModel = new BattleModel(5);
+    public static void main(String[] args) throws Exception{
+        BattleModel battleModel = new BattleModel(4);
         battleModel.createShip(1, Ship.Orientation.HORIZONTAL, 0, 0);
         battleModel.createShip(1, Ship.Orientation.HORIZONTAL, 2, 2);
         battleModel.createShip(1, Ship.Orientation.HORIZONTAL, 4, 4);
