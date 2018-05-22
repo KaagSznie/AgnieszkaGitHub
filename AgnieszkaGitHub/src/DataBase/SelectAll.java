@@ -6,7 +6,7 @@ import java.sql.*;
  *
  * JDBC - Java DataBase Connector 1) 2) 3) 4)
  */
-public class JDBC {
+public class SelectAll {
 
     public static void main(String[] args)
             throws SQLException, ClassNotFoundException {
